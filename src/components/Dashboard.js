@@ -1,6 +1,19 @@
+
+import Sidebar from'../layout/Sidebar'
+import Footer from '../layout/Footer'
+import Header from '../layout/Header'
+import { Outlet } from 'react-router-dom'
 const Dashboard = () => {
   return (
-    <div>
+      <>
+    <div id="page-top">
+        <div id="wrapper">
+            <Sidebar />
+          <div id="content-wrapper" className="d-flex flex-column">
+            <div id="content">
+              <Header/>
+                
+
         {/* Begin Page Content */}
                 <div class="container-fluid">
 
@@ -331,7 +344,13 @@ const Dashboard = () => {
 
                 </div>
                 {/* /.container-fluid */}
-    </div>
+                </div>
+                <Outlet/>
+            <Footer />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 

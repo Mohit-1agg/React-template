@@ -1,6 +1,6 @@
 const Animations = () => {
-  return (
-    <div>
+  return ( 
+    <>
       {/* Begin Page Content */}
                 <div class="container-fluid">
 
@@ -110,7 +110,7 @@ const Animations = () => {
 
                 </div>
                 {/* /.container-fluid */}
-    </div>
+    </>
   )
 }
 
